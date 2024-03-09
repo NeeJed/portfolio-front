@@ -1,0 +1,79 @@
+.searchResult {
+  width: 100%;
+  height: auto;
+  background: #FFF;
+  margin-bottom: 20px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(5, 5, 5, 0.2);
+          box-shadow: 0px 0px 7px 0px rgba(5, 5, 5, 0.2);
+}
+
+.searchResult .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #255C99;
+}
+
+.searchResult .userInfo .userImg {
+  display: block;
+  width: 70px;
+  height: 70px;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(5, 5, 5, 0.5);
+          box-shadow: 0px 0px 7px 0px rgba(5, 5, 5, 0.5);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.searchResult .userInfo .userData {
+  margin-left: 15px;
+}
+
+.searchResult .userInfo .userName {
+  color: #255C99;
+}
+
+.searchResult .userInfo .userLocation {
+  color: #984447;
+}
+
+.searchResult .userInfo .userEducationalStage {
+  color: #6B0504;
+}
+
+.searchResult .userCertificates {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.searchResult .userCertificates .certificate {
+  display: block;
+  width: 80px;
+  height: 100px;
+  margin: 5px 0;
+  margin-right: 15px;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(5, 5, 5, 0.5);
+          box-shadow: 0px 0px 7px 0px rgba(5, 5, 5, 0.5);
+  color: #255C99;
+  cursor: pointer;
+}
+
+.searchResult .userCertificates .certificate:last-child {
+  margin-right: 0;
+}
+
+.searchResult .userCertificates .certificate .certificateImg {
+  display: block;
+  width: 80px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

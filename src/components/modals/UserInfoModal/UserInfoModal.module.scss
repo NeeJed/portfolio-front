@@ -1,0 +1,112 @@
+@import '../../../utils/colors.scss';
+
+.modalWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba($black, 0.4);
+    .modalContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        max-height: 600px;
+        width: 600px;
+        background: $white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 0px rgba($black, 0.2);
+        .buttonClose {
+            border-radius: 0 10px 0 0;
+            &__container {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+            &:hover {
+                cursor: pointer;
+                background-color: rgba($black, 0.1);
+            }
+        }
+        .modal_title {
+            margin-bottom: 20px;
+        }
+        .modal_userData {
+            width: 350px;
+            max-height: 350px;
+            margin-bottom: 20px;
+            overflow-y: scroll;
+            & * {
+                margin-bottom: 10px;
+                width: 100%;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+.userImageContainer {
+    position: relative;
+    margin-bottom: 10px;
+}
+.userImage {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    &__iconWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: rgba($black, 0.2);
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__icon {
+        use {
+            fill: rgba($black, 0.4);
+            color: rgba($black, 0.4);
+            stroke: rgba($black, 0.4);
+        }
+    }
+}
+
+.Error_errorContainer {
+    position: absolute;
+    .errorMessage {
+        top: 0;
+        right: 150px;
+    }
+}
+
+.userImageIcon-enter {
+    opacity: 0;
+    transform:translateY(3%);
+}
+.userImageIcon-enter-active {
+    opacity: 1;
+    transform:translateY(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.userImageIcon-exit {
+    opacity: 1;
+    transform:translateY(0);
+}
+.userImageIcon-exit-active {
+    opacity: 0;
+    transform:translateY(3%);
+    transition: opacity 300ms, transform 300ms;
+}

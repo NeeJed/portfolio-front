@@ -1,0 +1,106 @@
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.button_primary {
+  color: #255C99;
+  background: transparent;
+  border: 1px solid #255C99;
+}
+
+.button_primary:hover {
+  border-color: transparent;
+  background: #255C99;
+  color: #FCFCFC;
+}
+
+.button_primary:active {
+  border-color: #3C6EA6;
+  color: #FCFCFC;
+  background: #264F7D;
+  -webkit-box-shadow: 0px 3px 0px inset #3C6EA6;
+          box-shadow: 0px 3px 0px inset #3C6EA6;
+}
+
+.button_primary[type="submit"]:focus {
+  border: 1px solid #264F7D;
+  outline: 1px solid #264F7D;
+  outline-offset: 2px;
+}
+
+.button_primary_bg {
+  color: #FCFCFC;
+  background: #255C99;
+  border: 1px solid #255C99;
+}
+
+.button_primary_bg:hover {
+  background: #264F7D;
+  border-color: #264F7D;
+}
+
+.button_primary_bg:active {
+  color: #FCFCFC;
+  background: #264F7D;
+  -webkit-box-shadow: 0px 3px 0px inset #3C6EA6;
+          box-shadow: 0px 3px 0px inset #3C6EA6;
+}
+
+.button_primary_bg[type="submit"]:focus {
+  border: 1px solid #264F7D;
+  outline: 1px solid #264F7D;
+  outline-offset: 2px;
+}
+
+.button_contrast {
+  color: #255C99;
+  background: #FCFCFC;
+  border: 1px solid #255C99;
+}
+
+.button_contrast[type="submit"]:focus {
+  border: 1px solid #3C6EA6;
+  outline: 1px solid #3C6EA6;
+  outline-offset: 2px;
+}
+
+.button_contrast:hover {
+  border-color: #264F7D;
+  background: whitesmoke;
+  color: #255C99;
+}
+
+.button_contrast:active {
+  border-color: #264F7D;
+  color: #255C99;
+  background: whitesmoke;
+  -webkit-box-shadow: 0px 3px 0px inset #FCFCFC;
+          box-shadow: 0px 3px 0px inset #FCFCFC;
+}
+
+.button_error {
+  color: #FCFCFC;
+  background: #E9190F;
+  border: 1px solid #E9190F;
+}
+
+.button_error:hover {
+  border-color: #6B0504;
+  background: #E9190F;
+  color: #FCFCFC;
+}
+
+.button_error:active {
+  border-color: #6B0504;
+  color: #FCFCFC;
+  background: #E9190F;
+  -webkit-box-shadow: 0px 3px 0px inset #6B0504;
+          box-shadow: 0px 3px 0px inset #6B0504;
+}

@@ -1,0 +1,95 @@
+.createCertificate_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 0;
+}
+
+.createCertificate__data {
+  max-height: 350px;
+  width: 100%;
+  max-width: 350px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+
+.createCertificate__data button {
+  width: 100%;
+}
+
+.createCertificate__data * {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.createCertificate__data *:last-child {
+  margin-bottom: 0;
+}
+
+.createCertificate__title {
+  margin-bottom: 30px;
+}
+
+.createCertificate_imgPreview {
+  display: block;
+}
+
+.createCertificate_imgPreview img {
+  height: 300px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(5, 5, 5, 0.4);
+}
+
+.modalWrapper .modalContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+  width: 600px;
+  background: #FCFCFC;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(5, 5, 5, 0.2);
+          box-shadow: 0px 0px 15px 0px rgba(5, 5, 5, 0.2);
+}

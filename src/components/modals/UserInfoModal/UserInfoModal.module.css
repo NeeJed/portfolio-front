@@ -1,0 +1,158 @@
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(5, 5, 5, 0.4);
+}
+
+.modalWrapper .modalContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  max-height: 600px;
+  width: 600px;
+  background: #FCFCFC;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(5, 5, 5, 0.2);
+          box-shadow: 0px 0px 15px 0px rgba(5, 5, 5, 0.2);
+}
+
+.modalWrapper .modalContainer .buttonClose {
+  border-radius: 0 10px 0 0;
+}
+
+.modalWrapper .modalContainer .buttonClose__container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.modalWrapper .modalContainer .buttonClose:hover {
+  cursor: pointer;
+  background-color: rgba(5, 5, 5, 0.1);
+}
+
+.modalWrapper .modalContainer .modal_title {
+  margin-bottom: 20px;
+}
+
+.modalWrapper .modalContainer .modal_userData {
+  width: 350px;
+  max-height: 350px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+}
+
+.modalWrapper .modalContainer .modal_userData * {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.modalWrapper .modalContainer .modal_userData *:last-child {
+  margin-bottom: 0;
+}
+
+.userImageContainer {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.userImage {
+  display: block;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.userImage__iconWrapper {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(5, 5, 5, 0.2);
+}
+
+.userImage__iconWrapper:hover {
+  cursor: pointer;
+}
+
+.userImage__icon use {
+  fill: rgba(5, 5, 5, 0.4);
+  color: rgba(5, 5, 5, 0.4);
+  stroke: rgba(5, 5, 5, 0.4);
+}
+
+.Error_errorContainer {
+  position: absolute;
+}
+
+.Error_errorContainer .errorMessage {
+  top: 0;
+  right: 150px;
+}
+
+.userImageIcon-enter {
+  opacity: 0;
+  -webkit-transform: translateY(3%);
+          transform: translateY(3%);
+}
+
+.userImageIcon-enter-active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.userImageIcon-exit {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.userImageIcon-exit-active {
+  opacity: 0;
+  -webkit-transform: translateY(3%);
+          transform: translateY(3%);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}

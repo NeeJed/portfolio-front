@@ -1,0 +1,22 @@
+@import '../../utils/colors.scss';
+
+.descriptionBlock {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border-bottom: 1px solid $dark-gray;
+    border-top: 0;
+    padding: 8px 15px;
+    background: $white;
+    &:last-child {
+        border-bottom: 0;
+    }
+    &_column {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    &_data {
+        
+    }
+}
